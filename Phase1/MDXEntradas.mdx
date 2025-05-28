@@ -1,0 +1,27 @@
+CREATE GLOBAL CUBE [Cube_entradas]
+STORAGE 'C:\Temp\CUBE_Entradas.cub'
+
+FROM [CUBE_Entradas](
+MEASURE [CUBE_Entradas].[Cantidad],
+MEASURE [CUBE_Entradas].[Cantidad Entradas],
+MEASURE [CUBE_Entradas].[Cantidad U Med Inv],
+MEASURE [CUBE_Entradas].[Fact Entradas Count],
+MEASURE [CUBE_Entradas].[Pct Descuento],
+MEASURE [CUBE_Entradas].[Pct Descuento Global D],
+MEASURE [CUBE_Entradas].[Pct Impuesto],
+MEASURE [CUBE_Entradas].[Precio],
+MEASURE [CUBE_Entradas].[Total],
+MEASURE [CUBE_Entradas].[Total D],
+MEASURE [CUBE_Entradas].[Total Descuento],
+MEASURE [CUBE_Entradas].[Total Descuento D],
+MEASURE [CUBE_Entradas].[Total Importe],
+MEASURE [CUBE_Entradas].[Total Importe D],
+MEASURE [CUBE_Entradas].[Total Impuesto],
+MEASURE [CUBE_Entradas].[Total Impuesto D],
+
+DIMENSION [CUBE_Entradas].[Dim Articulo],
+DIMENSION [CUBE_Entradas].[Dim Cliente],
+DIMENSION [CUBE_Entradas].[Dim Entrada],
+DIMENSION [CUBE_Entradas].[Dim Time],
+DIMENSION [CUBE_Entradas].[Dim Vendedor]
+)
